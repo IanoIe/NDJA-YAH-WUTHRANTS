@@ -3,10 +3,37 @@ body {
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
-a {
-  color: #00B7FF;
+header{
+  background: #9dbfad;
+
+}
+h1 {
+  font: normal;
+  text-align: center;
+
 }
 
-h1{
-  font-style: normal;
+.bolanha {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-position: center;
+  
+}
+
+img{
+  width: 100%;
+  height: 90%;
+}
+
+footer{
+  padding: 0.3px;
+  color: white;
+  font-size: 2rem;
+  text-align: center;
+  background: #9dbfad;
+  position: relative;
+  width: 100%;
 }
