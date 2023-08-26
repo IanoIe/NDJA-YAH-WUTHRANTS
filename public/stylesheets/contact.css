@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+main {
+    padding: 10%;
+
+}
+main > div{
+    padding: 25px;
+    text-align: right;
+    color: white;  
+}
+
+section {
+    padding: 5%;
+}
+section > div{
+    background-color: lightgrey;
+    width: 200px;
+    border: 15px solid green;
+    padding: 20px;
+    margin: 5px;
+}
