@@ -1,12 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
 
-/*Cabeçalho*/
+
+/* body*/
 *{
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 
+body {
+  background-image: linear-gradient(rgba(138, 138, 154, 0.5), rgba(255, 255, 0, 0.5)), url("../images/Bolonha.png");
+  height: 100vh;
+  background-size: cover;
+  background-position: center center; 
+}
+
+/*Cabeçalho*/
 header{
   width: 100%;
   height: 75px;
@@ -49,23 +59,43 @@ header > ul > li > a:hover{
   transform: all 0.4s ease 0s;
 }
 
-/* body*/
-body {
-  background-image: linear-gradient(rgba(138, 138, 154, 0.5), rgba(255, 255, 0, 0.5)), url("../images/Bolonha.png");
-  height: 100vh;
-  background-size: cover;
-  background-position: center center; 
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.wrapper h1{
+  font-size: 36px;
+  text-align: center;
+}
+
+.wrapper .input-box{
+  width: 100%;
+  height: 50px;
+  background: #eae6e5;
+  margin: 30px 0;
+}
+
+.input-box input{
+  width: 100%;
+  height: 100%;
 }
 
 
 /* Rodapé*/
 footer {
-  position: absolute;
+  position: fixed;
   bottom: 0;
   width: 100%;
+  left: 0;
   height: 2.5rem;
   text-align: center;
-  color: rgb(8, 8, 8);
   font-size: 25px;
+  background-image: linear-gradient(#033747, #012733);
 }
 
+footer p {
+  color: white;
+}

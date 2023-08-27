@@ -10,13 +10,32 @@ main > div{
     color: white;  
 }
 
-section {
-    padding: 5%;
+main .news-biombo {
+    box-shadow: 0 5px rgba(0, 0, 0, .2);
+    border-radius: 5px;
+    background: #fff;
+    text-align: center;
+    padding: 30px 30px
+
 }
-section > div{
-    background-color: lightgrey;
-    width: 200px;
-    border: 15px solid green;
-    padding: 20px;
-    margin: 5px;
+
+.contact-info{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    gap: 15px;
+}
+
+.contact-info .box-news{
+    box-shadow: 0 5px rgba(0, 0, 0, .2);
+    border-radius: 5px;
+    background: #fff;
+    text-align: center;
+    padding: 170px 100px;
+    margin-right: 0%;
+}
+
+.contact-info .box-news h1{
+    color: #444;
+    font-size: 22px;
+    padding: 10px;
 }
