@@ -4,9 +4,11 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>N`DJA YAH WÛTHRANTS</title>
   <link rel="stylesheet" href="stylesheets/style.css">
   <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
-  <title>N`DJA YAH WÛTHRANTS</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="javascripts/login.js"></script>
 </head>
 
 <body>
@@ -26,22 +28,20 @@
     <form action="">
       <h1>Login</h1>
       <div class="input-box">
-        <input type="text" placeholder="Username" required>
+        <input type="text" placeholder="Email" id="email" required>
         <i class='bx bxs-user'></i>
       </div>
 
       <div class="input-box">
-        <input type="password" placeholder="Password" required>
+        <input type="password" placeholder="Senha" id="password" required>
         <i class='bx bxs-lock-alt'></i>
       </div>
-
       <div class="remember-forgot">
         <label><input type="checkbox"> Rembember me </label>
         <a href="#">Forgot password?</a>
       </div>
 
       <button type="button" class="submit-btn" onclick="entrar()">Login</button>
-
       <div class="register-link">
         <p>Don`t have an account? <a href="#">Register</a></p>
       </div>

@@ -4,10 +4,10 @@ var util = require('util');
 /** Ligação a Base de dados RemoteMysql */
 var pool = mysql.createPool({
     connectionLimit: 20,
-    host: 'remotemysql.com',
-    user: '......',
-    password: 'senha',
-    database: '....'
+    host: 'localhost',
+    user: 'root',
+    password: 'Mamae13',
+    database: 'NDA_YAH_WUTHRANTS'
 });
 
 pool.getConnection((err, connection) =>{

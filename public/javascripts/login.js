@@ -3,7 +3,7 @@ function entrar(){
         url: '/api/auth/login',
         method: 'post',
         data: {
-            Email:document.getElementById("").value,
+            Email:document.getElementById("email").value,
             Senha:document.getElementById("password").value,
         },
         success: function(result, status) {
