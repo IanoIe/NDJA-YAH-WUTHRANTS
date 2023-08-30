@@ -1,12 +1,12 @@
 var express = require('express');
 var router = express.Router();
-var loginModel = require("../models/loginModel");
+var logModel = require("../models/loginModel");
 
 
 
 /* Router de Login */
 router.post('/login', function(req, res, next) {
-  loginModel.login(req.body, function(status, respond){
+  logModel.login(req.body, function(status, result){
     if (status.code == 200)
     res.send(result);
     else {

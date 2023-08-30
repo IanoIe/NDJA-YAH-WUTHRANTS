@@ -8,14 +8,16 @@ module.exports.login = function(obj, callback, next){
         }
         else conn.query("Select idUtilizador, emailUtilizador, senhaUtilizador" +
                         "from Utilizador where emailUtilizador=? and senhaUtilizador=?", +
-                        [obj.email, obj.senha], function(err, rows){
-            conn.release();
-            if (!(rows.length === 0)){
-                callback({code: 200, status: "ok"}, rows);
-            }
-            else {
-                callback({code: 401, status: " Email ou Senha Incorrecta"})
-            }
-        })
-    })
-}
+                        [obj.Email, obj.Senha], function(err, rows){
+                            console.log(rows);
+                            console.log(obj);
+                            conn.release();
+                            if (!(rows.length === 0)) {
+                                callback({code: 200, status: "Ok"}, rows);
+                            }
+                            else {
+                                callback({code: 401, status: "Email ou Senha incorrecto"}, null);
+                            }
+                        })
+                    })
+                }
