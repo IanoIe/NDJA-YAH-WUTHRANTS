@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="stylesheets/contact.css">
   <link rel="stylesheet" href="stylesheets/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <title>CONTACT</title>
 </head>
 
@@ -23,11 +24,15 @@
   </header>
 
   <main>
-
     <div class="contact-info">
-
       <div class="box-news">
         <h1>Mapa de Rigião de Biombo</h1>
+        <div class="grid-item-map">
+          <div id="map">
+            <script src="javascripts/leaflet-routing-machine.js"></script>
+            <script src="javascripts/mapa.js"></script>
+          </div>
+        </div>
       </div>
 
       <dix class="box">

@@ -4,7 +4,7 @@ var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
 
-var loginRoutes = require('./routes/loginRoutes');
+var loginRoute = require('./routes/loginRoutes');
 
 var app = express();
 
@@ -17,7 +17,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 
 
-app.use('/api/login', loginRoutes);
+app.use('/api/login', loginRoute);
 
 
 module.exports = app;

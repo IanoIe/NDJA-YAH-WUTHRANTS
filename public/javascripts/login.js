@@ -8,6 +8,7 @@ function entrar(){
             Senha:document.getElementById("password").value,
         },
         success: function(result, status) {
+            console.log(result)
             alert('Login feito com sucesso')
             localStorage.setItem("idUtilizador", result[0].idUtilizador);
             window.location = "principal.html";
