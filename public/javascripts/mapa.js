@@ -1,23 +1,13 @@
-var mapa
-var map;
 
 
-
-window.onload = function(){
-    document.getElementById('emailUtilizador').innerHTML = localStorage.getItem('emailUtilizador');
-}
-
-mapa = carregarMapa('map');
-
-/**Função carregar o map */
-function carregarMapa(getElementById){
-    map = L.map("map").setView([11.794613, -15.910183], 8);
-
-    //osm layer
-    var osm = L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
-        attribution:
-        '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
-    });
-    osm.addTo(map);
+function carregarMapa(idElement){
+    var mapa = L.map(idElement)
+    var attribution = '&copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors';
+    var tileUrl = 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png';
+    var tiles = L.ttileLayer(tileUrl, {attribution});
+    tiles.addTo(mapa);
+    /**Coordenadas da localização de Biombo */
+    mapa.setView([11.887675, -15.857155], 6);
+    return mapa
 }
 
