@@ -7,17 +7,21 @@
   <link rel="stylesheet" href="stylesheets/contact.css">
   <link rel="stylesheet" href="stylesheets/style.css">
 
-
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.2.0/dist/leaflet.css" />
   <link rel="stylesheet" href="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.css" />
+
   <script src="https://unpkg.com/leaflet@1.2.0/dist/leaflet.js"></script>
   <script src="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.js"></script>
 
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet.locatecontrol@v0.74.0/dist/L.Control.Locate.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/leaflet.locatecontrol@v0.74.0/dist/L.Control.Locate.min.js" charset="utf-8"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css">
   
-  <script src="javascripts/mapa.js"></script>
-  <script src="javascripts/leaflet-routing-machine.js"></script>
+  
   <title>CONTACT</title>
 </head>
 
@@ -35,7 +39,6 @@
   </header>
 
   <main>
-
     <div class="box">
       <p><h3>20, Rua Ndjirapa Có</h3></p>
       <p><h3>120 Biombo</h3></p>
@@ -47,15 +50,17 @@
       <p><h3>Email: <a href="mailto:ndjirapa@gmail.gb">ndjirapa@gmail.gb</a></h3></p>  
     </div>
 
-    <div class="contact-info">
-      <div id="map"></div>
+    <div id="map">
+      <script src="javascripts/leaflet-routing-machine.js"></script>
+      <script src="javascripts/mapa.js"></script>
+      <script src="javascripts/conatct"></script>
     </div>
   </main>
+
   
   <footer>
     <p>N´DJA YAH WÛTHRANTS, Copyright &copy; 2023</p>
   </footer>
  
 </body>
-
 </html>
