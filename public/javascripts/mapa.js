@@ -18,3 +18,4 @@ function carregarMapa(idElement){
 
 
 mapa = carregarMapa('map');
+
