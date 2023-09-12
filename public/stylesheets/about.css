@@ -8,9 +8,8 @@
     outline: none;
     border: none;
     text-decoration: none;
-    text-transform: capitalize;
     transition: .2s linear;
-}
+ }
 
 
 .about-info{
@@ -18,20 +17,19 @@
     color: white;
     padding-top: 100px;
     text-align: center;
-}
+ }
 
 
 main > .about-info > p{
     font-size: 20px;
-
-}
+ }
 
 
 .container {
     padding: 15px 9%;
     padding-bottom: 100px;
     margin-top: 25px;
-}
+ } 
 
 .container .heading{
     text-align: center;
@@ -39,13 +37,13 @@ main > .about-info > p{
     color: #fff;
     text-shadow: 0 5px 10px rgba(0, 0, 0, .2);
     font-size: 50px;
-}
+ }
 
 .container .box-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
     gap: 15px;
-}
+ }
 
 .container .box-container .box{
     box-shadow: 0 5px rgba(0, 0, 0, .2);
@@ -53,23 +51,23 @@ main > .about-info > p{
     background: #fff;
     text-align: center;
     padding: 30px 20px;
-}
+ }
 
 .container .box-container .box img{
     height: 180px;
-}
+ }
 
 .container .box-container .box h3{
     color: #444;
     font-size: 22px;
     padding: 10px 0;
-}
+ }
 
 .container .box-container .box p{
     color: #777;
     font-size: 15px;
     line-height: 1.8;
-}
+ }
 
 .container .box-container .box .btn{
     margin-top: 10px;
