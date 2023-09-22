@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #424544;
+}
+
+.box {
+    margin: 100px auto;
+    width: 80%;
+}
+
+img {
+    max-width: 320px;
+    float: left;
+    border-radius: 10px;
+    margin-right: 15px;
+}
+
+.box-text {
+    color: #fff;
+}
+
+.box-text h2{
+    font-size: 45px;
+}
+
+.box-text p{
+    font-size: 18px;
+}
