@@ -10,7 +10,7 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: #9e9977;
+    background: #8c908b;
 }
 
 .box {
@@ -29,7 +29,7 @@ img {
     color: #fff;
 }
 
-.box-text h2{
+.box-text h2 {
     font-size: 45px;
 }
 
@@ -37,3 +37,6 @@ img {
     font-size: 18px;
     margin-top: 10px;
 }
+
+
+

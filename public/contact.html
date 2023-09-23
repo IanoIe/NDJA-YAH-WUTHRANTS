@@ -21,7 +21,6 @@
   <script src="https://cdn.jsdelivr.net/npm/leaflet.locatecontrol@v0.74.0/dist/L.Control.Locate.min.js" charset="utf-8"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css">
   
-  
   <title>CONTACT</title>
 </head>
 
@@ -49,6 +48,13 @@
         </strong>
       </p>
       <p><h3>Email: <a href="mailto:ndjirapa@gmail.gb">ndjirapa@gmail.gb</a></h3></p>  
+    </div>
+
+    <div id="searchBar">
+      <button type="button" onclick="localizacaoAtual()">Localização de Quinhamel</button>
+      <label for="descricao">Selecionar outra localização: </label>
+      <input type="text" id="localizacao" text="localizacao" onkeyup="geolocalizacao(event)">
+      <div id="resultados"></div>
     </div>
 
     <div id="map">
