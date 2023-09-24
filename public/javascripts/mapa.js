@@ -21,13 +21,18 @@ L.marker([11.955979, -15.793463]).addTo(map)
     .bindPopup('Reino de Bijimita')
     .openPopup();
 
-
 /**Adicionado marcador que identifica no mapa Reino de Antula*/
 L.marker([11.861915, -15.593262]).addTo(map)
     .bindPopup('Reino de Antula')
     .openPopup();
 
-
-
-
+/**Adicionado marcador que identifica no mapa Reino de Bor*/
+L.marker([11.847597, -15.641883]).addTo(map)
+    .bindPopup('Reino de Bor')
+    .openPopup();
+    
+/**Adicionado marcador que identifica no mapa Reino de Quisef*/
+L.marker([11.826995, -15.757871]).addTo(map)
+    .bindPopup('Reino de Quisef')
+    .openPopup();
     
