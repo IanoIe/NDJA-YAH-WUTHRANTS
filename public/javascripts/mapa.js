@@ -1,15 +1,10 @@
 
 /**Adicionar o mapa na pagina, centralizado nas coordenas de Sector de Quinhamel */
-var map = L.map('map').setView([11.895015, -15.850439], 11);
+var map = L.map('map').setView([11.886818, -15.785327], 11);
 
 L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
 }).addTo(map);
-
-/**Adicionado marcador que identifica no mapa Sector de Quinhamel */
-L.marker([11.895015, -15.850439]).addTo(map)
-    .bindPopup('Sector de Quinhamel.<br>')
-    .openPopup();
 
 
 /**Adicionado marcador que identifica no mapa Reino de Biombo (Dorce) */
